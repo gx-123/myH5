@@ -1,0 +1,99 @@
+!DOCTYPE html>
+<html>
+	<head>
+		<title>表单练习</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="一次关于表单的练习">
+		<meta name="keyword" content="表单">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<h1>饮食调查问卷表</h1>
+		<div class="p">
+			<form action="welcome.php" method="get" target="_blank" autocomplete="off">
+				<br><br><br>
+				<label>平时吃东西吗: <input type="text" name="eat" value="吃" readonly></label><br><br>
+				<label>甜粽子还是咸粽子： </label> <input type="text" name="zong" value="甜咸亦可" disabled></label><br><br>
+				<label>性别：
+					<select name="sex">
+						<option value="male">男</option>
+						<option value="fmale">女</option>
+					<select>
+				</label><br><br>
+				<label>年龄：<input type="number" max="101" min="1" name="age" required></label><br><br>
+				<label>米饭还是面条:<input type="text" name="zhusi"></label><br><br>
+				
+				<fieldset>
+				<legend>蔬菜水果</legend>
+					<label for="fruit">平时喜欢吃什么水果:</label> <input type="text" name="fruit" list="fruitdata" id="fruit"><br><br>
+					<label>平时喜欢吃什么蔬菜:<input type="text" name="vegetable"></label>
+				</fieldset>
+		
+				<datalist id="fruitdata">
+						<option>苹果</option>
+						<option>香蕉</option>
+						<option>梨子</option>
+						<option>葡萄</option>		
+						<option>草莓</option>
+						<option>菠萝</option>
+				</datalist>
+				
+				
+				<p>input元素type属性的一大堆用处如下</p>
+				<p>1、用于按钮</p>
+					<input type="submit" value="提交"> 	 <!-- 因为input是单标签所以用value属性填写值 -->
+					<input type="button" value="点点点">
+					<input type="reset" value="删除">
+				<p>2、用于多选框</p>
+					<input type="checkbox" name="fruit" value="苹果"> <span>苹果</span> <br>
+					<input type="checkbox" name="fruit" value="香蕉"> <span>香蕉</span> <br>
+					<input type="checkbox" name="fruit" value="梨子"> <span>梨子</span> <br>
+					<input type="checkbox" name="fruit" value="葡萄"> <span>葡萄</span> <br>
+					<input type="checkbox" name="fruit" value="草莓"> <span>草莓</span><br><br>
+				<p>3、用于构造单选框</p>
+					<input type="radio" name="vegetable" value="西红柿">西红柿<br>
+					<input type="radio" name="vegetable" value="青菜">青菜<br>
+					<input type="radio" name="vegetable" value="莴苣">莴苣<br>
+					<input type="radio" name="vegetable" value="白菜">白菜<br><br>
+				<p>4、用于日期等</p>
+					时间： <input type="time" name="time"><br>
+					日期： <input type="data" name="data"><br>
+					年月： <input type="month" name="month"><br>
+					本地日期： <input type="datetime-local" name="datetime-local"><br>
+					周年：<input type="week" name="week"><br><br><br><br>
+				<p>5、用于各种文本输入</p>
+					邮箱： <input type="email" name="email"><br>
+					数字（1-999）： <input type="number" name="number" min="1" max="999"><br>
+					密码： <input type="password" name="password"><br>
+					搜索字段： <input type="search" name="search"><br>
+					电话号码： <input type="tel" name="tel" placeholder="请输入电话" pattern="0?(13|14|15|17|18|19)[0-9]{9}" required ><br>
+					输入URL： <input type="url" name="url" placeholder="请输入网址" pattern="^((https|http)?:\/\/)[^\s]+" required ><br>
+					任意单行文字： <input type="text" name="text" size="25" maxlength="30"><br><br><br><!--这里使用size属性和maxlength属性规定了文本框的大小和输入字符的长度-->
+				<p>6、其他用法</p>
+					颜色盘： <input type="color" name="color"><br>
+							<input type="hidden" name="MAX_FILE_SIZE" value="1024">
+					添加文件： <input type="file" name="file"  accept=".html,.jpg,video/*" enctype="multipart/form-data" multiple><br>
+					滑块（范围1-25）： <input type="range" name="range" min="1" max="25"><br>
+					图片按钮： <input type="image" src="E://WEB/img/aa.jpg" width="100px" height="70px"><br><br><br>
+					看不见的隐藏: <input type="hidden" name="hidden" value="???"><br><br> 
+					<pre>
+				
+				
+				
+				
+				
+				
+				
+			
+
+				</pre>
+				<button type="submit">提交</button>
+				<button type="reset">删除</button><br><br><br><br><br>
+				
+				
+			</form>
+		</div>
+	</body>
+</html>

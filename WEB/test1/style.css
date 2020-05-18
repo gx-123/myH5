@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0em;
+}
+.dweb{
+
+}
+.header{
+    height: 15vh;
+    position: fixed;
+    width: 100%;
+    background-color:#a43845;
+    padding-top: 5vh;
+}
+.header .userinfo{
+
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+.header .userinfo img{
+    width: 40px;
+    border-radius: 20px;
+}
+.header .userinfo .header-search{
+    margin-left: 3vw;
+}
+.header .userinfo .header-search i{
+    position: absolute;
+    margin-top:1vh;
+    margin-left: 2vw;
+    font-size: 19px;
+    color: #777777;
+    font-weight: 700;
+}
+.header .userinfo .header-search input{
+    width: 60vw;
+    height: 4vh;
+    border-radius: 2vh;
+    border:0; 
+}
+.header .userinfo .header-right{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.header .userinfo .header-right i{
+    margin-left: 3vw;
+    color: white;
+    font-size: 25px;
+}
+.header .menu-nav{
+    height: 5vh;
+
+    overflow-x: scroll;
+}
+.header .menu-nav .menu{
+    display: flex;
+    line-height: 5vh;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.header .menu-nav .menu .item{
+    margin-left: 10vw;
+    white-space: nowrap;
+    color: white;
+}
+.content{
+    height: 100vh;
+}
+.tabBar{
+    height: 15vh;
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+    background-color:#a43845;
+}

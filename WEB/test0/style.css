@@ -1,0 +1,79 @@
+
+h2,p{
+    text-align: center;
+}
+h5{
+    text-align: center;
+    font-size: 10px;
+}
+
+a{
+   color: white;
+    font-weight: bold;
+    text-decoration: none;  
+
+}
+img{
+    width:700px;
+    height:380px;
+    display:block;
+    clear:both;
+    position: absolute;
+    left: 50px;
+}
+.popUp{
+    color: rgb(156, 13, 13);
+    font-size: 30px;
+    text-align: center;
+    background-color: beige;
+    display:block;
+}
+#description{
+    background-color: rgb(211, 211, 170);
+    font-size:25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgoldenrod;
+    position: absolute;
+    top: 760px;
+    left: 370px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline;
+    margin-left: 70px;
+
+    text-decoration:none;
+    
+    transform: translate(-50%,-50%);
+    background: linear-gradient(90deg,blue,red,yellow,blue);
+    background-size: 400%;
+
+    color:white;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+li:hover{
+    animation: sun 8s infinite;
+}
+li:hover{
+    animation: sun 8s infinite;
+}
+
+@keyframes sun{
+    100%{
+        background-position: -400% 0;
+    }
+}
